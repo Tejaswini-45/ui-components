@@ -30,12 +30,3 @@ Pushing Changes Back to GitHub
 git add .
 git commit -m "Describe your change"
 git push origin main
-
-
-
----
-
-Replace YOUR_USERNAME with your actual GitHub username if sharing your repository link.
-
-This README provides everything needed to set up, edit, and run your local UI components project!
-
