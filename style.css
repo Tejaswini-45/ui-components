@@ -1,0 +1,29 @@
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #eee;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.data-table th {
+  background: #f8f8f8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.data-table tr:hover td {
+  background: #fafafa;
+}
+
+.empty-state,
+.loading-state {
+  text-align: center;
+  margin: 1rem 0;
+  color: #666;
+}

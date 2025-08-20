@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UI Components Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Place InputField code here -->
+  <div class="input-field outlined md" data-variant="outlined" data-size="md">
+    <label for="username" class="input-label">Username</label>
+    <div class="input-wrapper">
+      <input id="username" type="text" placeholder="Enter username" aria-invalid="false" />
+      <button type="button" class="clear-btn" aria-label="Clear input">✕</button>
+      <button type="button" class="toggle-btn" aria-label="Toggle password visibility">👁️</button>
+      <span class="loader" aria-hidden="true"></span>
+    </div>
+    <p class="helper-text">Helper text goes here</p>
+    <!-- <p class="error-text">Error message goes here</p> -->
+  </div>
+  <!-- Place DataTable code here -->
+  <table class="data-table" aria-label="User data table">
+    <thead>
+      <tr>
+        <th><input type="checkbox" id="select-all" /></th>
+        <th data-sort="name">Name</th>
+        <th data-sort="email">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-id="1">
+        <td><input type="checkbox" /></td>
+        <td>Jane Doe</td>
+        <td>jane@example.com</td>
+      </tr>
+      <tr data-id="2">
+        <td><input type="checkbox" /></td>
+        <td>John Smith</td>
+        <td>john@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="empty-state" hidden>No records found</div>
+  <div class="loading-state" hidden>Loading...</div>
+  <script src="script.js"></script>
+</body>
+</html>
